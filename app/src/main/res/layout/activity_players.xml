@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayersListActivity">
+
+    <ImageView
+        android:id="@+id/ImageProfile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/cristianoronaldo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/nameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageProfile"
+        android:textSize="20sp"
+        android:text="Name:"/>
+
+    <TextView
+        android:id="@+id/etnameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="Cristiano"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/nameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/ImageProfile" />
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/surnameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameProfile"
+        android:textSize="20sp"
+        android:text="Surname:"/>
+
+    <TextView
+        android:id="@+id/etsurnameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="Ronaldo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/surnameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/etnameProfile" />
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/ageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surnameProfile"
+        android:textSize="20sp"
+        android:text="Age:"/>
+
+    <TextView
+        android:id="@+id/etageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="34"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ageProfile"
+        app:layout_constraintTop_toBottomOf="@+id/etsurnameProfile" />
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/birthdayProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageProfile"
+        android:textSize="20sp"
+        android:text="Date of Birth:"/>
+
+    <TextView
+        android:id="@+id/etbirthdayProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="05/02/1985"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ageProfile"
+        app:layout_constraintTop_toBottomOf="@+id/etageProfile" />
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/countryProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birthdayProfile"
+        android:textSize="20sp"
+        android:text="Counrty:"/>
+
+    <TextView
+        android:id="@+id/etcountryProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="Portugal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/countryProfile"
+        app:layout_constraintTop_toBottomOf="@+id/etbirthdayProfile" />
+
+    "----------------------------------------------------------------"
+
+    <TextView
+        android:id="@+id/teamProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryProfile"
+        android:textSize="20sp"
+        android:text="Team Football:"/>
+
+    <TextView
+        android:id="@+id/etteamProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="12dp"
+        android:text="Manchester.United"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/teamProfile"
+        app:layout_constraintTop_toBottomOf="@+id/etcountryProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
