@@ -1,4 +1,4 @@
-package com.example.projekti1
+package com.example
 
 data class Players(
     var image: Int, var name: String, var surname: String, var age: Int, var birthday: String,
